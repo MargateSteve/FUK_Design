@@ -1,0 +1,121 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 31-Mar-2021, 19:01:56
+    Author     : srbal
+*/
+
+@import "../../vendor/twbs/bootstrap/scss/buttons";
+
+@each $color, $value in $match-outcome-colors {
+  .btn-outcome-#{$color} {
+    @include button-variant($value, $value);
+  }
+}
+
+@each $color, $value in $match-outcome-colors {
+  .btn-outcome-outline-#{$color} {
+    @include button-outline-variant($value);
+  }
+}
+
+body {
+    background-color: #acc3ec; 
+}
+
+.fixturelist-month {
+    .accordion-header {
+        button {
+            color: $blue-900; 
+            background-color: $blue-300;
+        }
+    }
+    
+    .accordion-body {
+        padding: .5rem;
+    }
+    
+}
+
+.fixturelist-date {
+    .accordion-header {
+        button {
+            color: $blue-700;
+            background-color: $blue-200;
+        }
+    }
+    
+}
+
+.fixturelist-fixture {
+    .accordion-header {
+        button {
+            background-color: $blue-100;
+
+        }
+    }
+    
+}
+
+.matchlist {
+    .comp-header {
+        background-color: $gray-700;
+        color: $gray-300;
+        padding-left: $spacer;
+        padding-right: $spacer;
+        font-weight: $font-weight-bold;
+    }
+}
+
+
+.now_curr_next_bar{
+    background-color: $gray-900;
+    .nav-link{
+        color: $gray-100;
+        &:hover{
+            color: $blue-200;
+        }
+    }
+
+}
+
+[class*='btn-outcome-'], 
+[class*='btn-outcome-']:hover {
+    color: $white;
+}
+
+.adm-feature-box{
+    background-color: $adm-feature-box-bg;
+    padding: $spacer *.25;
+    border-width: $adm-feature-box-border-width;
+    border-style: solid;
+    border-color: $adm-feature-box-border-color;
+    @include border-radius($adm-feature-box-border-radius);
+    @include box-shadow($adm-feature-box-shadow);
+    margin-bottom:$spacer;
+    
+}
+
+.adm-feature-box-simple-method{
+    background-color: $gray-100;
+    padding: $spacer *.25;
+   //border: $blue-600 solid $border-width *2;
+   // border-radius: $border-radius-sm;
+    
+    border-width: $border-width *2;
+    border-style: solid;
+    //border-color: $dark;
+    
+    --bs-border-opacity: .25;
+    border-color: rgba($blue-600, var(--bs-border-opacity)) !important;
+    
+    @include border-radius($border-radius-sm);
+    @include box-shadow($box-shadow);
+    
+    margin-bottom:$spacer;
+    
+}
+

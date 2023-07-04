@@ -1,0 +1,28 @@
+// scss-docs-start site-colors-map
+$site-colors: (
+  "fixture":    green,
+  "fulltime":  blue,
+  "postponed":  red,
+  "abandoned": yellow,
+  "dark-nav": $gray-900,
+) !default;
+// scss-docs-end site-colors-map
+
+$match-outcome-colors: (
+  "win": blue,
+  "draw": green,
+  "defeat": red,
+) !default;
+
+
+$font-size-xlg:                $font-size-base * 1.5 !default;
+$font-size-xxlg:               $font-size-base * 2 !default;
+
+$bg-medium: $green-700;
+$bg-dark: $green-900;
+
+$adm-feature-box-bg: $gray-100;
+$adm-feature-box-border-color: rgba($blue-600, .25);
+$adm-feature-box-border-width: $border-width *2;
+$adm-feature-box-border-radius:$border-radius-sm;
+$adm-feature-box-shadow:$box-shadow;

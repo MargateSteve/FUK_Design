@@ -1,0 +1,11 @@
+Installled Bootstrap through COMPOSER
+
+Opened CMD
+
+Type composer to start
+
+W:\Projects\FUK_Design>
+
+W:\Projects\FUK_Design>composer require twbs/bootstrap:5.3.0
+
+Moved everything into the SCSS folder as should have been there to start with.

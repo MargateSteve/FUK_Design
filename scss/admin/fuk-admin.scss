@@ -1,0 +1,38 @@
+/*
+    Created on : 07-May-2021, 21:34:17
+    Author     : Steve Ball
+*/
+
+@import "../../vendor/twbs/bootstrap/scss/functions";
+@import "../../vendor/twbs/bootstrap/scss/variables";
+@import "../../vendor/twbs/bootstrap/scss/mixins";
+
+// Local 
+@import "../shared/variables";
+@import "../shared/utilities";
+
+@import "variables";
+
+// Use bottstrap api to process local utilities
+@import "../../vendor/twbs/bootstrap/scss/utilities/api";
+
+
+
+// Below is component specific. 
+@import "s-main";
+@import "../shared/_fuk_shared";
+
+#sidebarMenuLeft {
+    background-color: $dark-nav;
+}
+
+.hover-card {
+    
+    * {
+        background-color: transparent !important; 
+    }
+    
+    &:hover {
+        background-color: $blue-100 !important; 
+    }
+}
