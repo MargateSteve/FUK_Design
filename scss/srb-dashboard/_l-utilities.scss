@@ -1,0 +1,12 @@
+$utilities: (
+  "background-color": (
+    property: background-color,
+    class: bg,
+    values: $test-colors
+  ),
+  "colors": (
+    property: color,
+    class: text,
+    values:  $test-colors
+  ),
+);

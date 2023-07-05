@@ -1,0 +1,34 @@
+/*
+    Created on : 07-May-2021, 21:34:17
+    Author     : Steve Ball
+*/
+@import "../../vendor/twbs/bootstrap/scss/functions";
+@import "../../vendor/twbs/bootstrap/scss/variables";
+@import "../../vendor/twbs/bootstrap/scss/mixins";
+
+// Local 
+@import "l-variables";
+@import "l-utilities";
+
+// Use bottstrap api to process local utilities
+@import "../../vendor/twbs/bootstrap/scss/utilities/api"; 
+
+// Below is not covered by utilities api. 
+@import "l-alerts";
+@import "l-buttons";
+
+
+// Below is component specific. 
+//@import "s-main";
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+  
+  &:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+  }
+} 
+

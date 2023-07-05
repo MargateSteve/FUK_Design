@@ -2,60 +2,76 @@
     Created on : 07-May-2021, 21:34:17
     Author     : Steve Ball
 */
-.bg-fixture {
-  background-color: green !important;
-}
-
-.bg-fulltime {
-  background-color: blue !important;
-}
-
-.bg-postponed {
-  background-color: red !important;
-}
-
-.bg-abandoned {
-  background-color: yellow !important;
-}
-
 .bg-dark-nav {
   background-color: #212529 !important;
 }
 
-.text-fixture {
-  color: green !important;
+.bg-fixture-status-fx {
+  background-color: green !important;
 }
 
-.text-fulltime {
-  color: blue !important;
+.bg-fixture-status-ft {
+  background-color: blue !important;
 }
 
-.text-postponed {
-  color: red !important;
+.bg-fixture-status-pp {
+  background-color: red !important;
 }
 
-.text-abandoned {
-  color: yellow !important;
+.bg-fixture-status-ab {
+  background-color: yellow !important;
+}
+
+.bg-fixture-status-vd {
+  background-color: rgb(83, 83, 81) !important;
+}
+
+.bg-match-outcome-win {
+  background-color: blue !important;
+}
+
+.bg-match-outcome-draw {
+  background-color: green !important;
+}
+
+.bg-match-outcome-loss {
+  background-color: red !important;
 }
 
 .text-dark-nav {
   color: #212529 !important;
 }
 
-.text-win {
-  color: blue !important;
-}
-
-.text-draw {
+.text-fixture-status-fx {
   color: green !important;
 }
 
-.text-defeat {
+.text-fixture-status-ft {
+  color: blue !important;
+}
+
+.text-fixture-status-pp {
   color: red !important;
 }
 
-.text-orange {
-  color: #feb272 !important;
+.text-fixture-status-ab {
+  color: yellow !important;
+}
+
+.text-fixture-status-vd {
+  color: rgb(83, 83, 81) !important;
+}
+
+.text-match-outcome-win {
+  color: blue !important;
+}
+
+.text-match-outcome-draw {
+  color: green !important;
+}
+
+.text-match-outcome-loss {
+  color: red !important;
 }
 
 body {
@@ -461,7 +477,7 @@ and open the template in the editor.
   --bs-btn-border-radius: var(--bs-border-radius-sm);
 }
 
-.btn-outcome-win {
+.btn-outcome-match-outcome-win {
   --bs-btn-color: #fff;
   --bs-btn-bg: blue;
   --bs-btn-border-color: blue;
@@ -478,7 +494,7 @@ and open the template in the editor.
   --bs-btn-disabled-border-color: blue;
 }
 
-.btn-outcome-draw {
+.btn-outcome-match-outcome-draw {
   --bs-btn-color: #fff;
   --bs-btn-bg: green;
   --bs-btn-border-color: green;
@@ -495,7 +511,7 @@ and open the template in the editor.
   --bs-btn-disabled-border-color: green;
 }
 
-.btn-outcome-defeat {
+.btn-outcome-match-outcome-loss {
   --bs-btn-color: #000;
   --bs-btn-bg: red;
   --bs-btn-border-color: red;
@@ -512,7 +528,7 @@ and open the template in the editor.
   --bs-btn-disabled-border-color: red;
 }
 
-.btn-outcome-outline-win {
+.btn-outcome-outline-match-outcome-win {
   --bs-btn-color: blue;
   --bs-btn-border-color: blue;
   --bs-btn-hover-color: #fff;
@@ -529,7 +545,7 @@ and open the template in the editor.
   --bs-gradient: none;
 }
 
-.btn-outcome-outline-draw {
+.btn-outcome-outline-match-outcome-draw {
   --bs-btn-color: green;
   --bs-btn-border-color: green;
   --bs-btn-hover-color: #fff;
@@ -546,7 +562,7 @@ and open the template in the editor.
   --bs-gradient: none;
 }
 
-.btn-outcome-outline-defeat {
+.btn-outcome-outline-match-outcome-loss {
   --bs-btn-color: red;
   --bs-btn-border-color: red;
   --bs-btn-hover-color: #000;

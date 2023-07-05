@@ -1,0 +1,14 @@
+$test-colors: (
+  "alt-orange": $orange-700,
+) !default;
+
+$sidebar-width: 210px;
+
+$font-size-xlg:                $font-size-base * 1.5 !default;
+$font-size-xxlg:               $font-size-base * 2 !default;
+
+$on-dark-link: $gray-100;
+$on-dark-link-hover: $blue-200;
+
+$on-light-link: $gray-800;
+$on-light-link-hover: $blue-800;

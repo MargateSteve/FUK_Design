@@ -2,21 +2,24 @@ $utilities: (
   "background-color": (
     property: background-color,
     class: bg,
-    values: $site-colors
+    values: map-merge(
+      map-merge(
+        $site-colors,
+        $fixture-colors
+      ), 
+      $match-outcome-colors
+    )
   ),
   
-    "colors": (
-        property: color,
-        class: text,
-        //adds orange-200 to existing $site-colors
-        values: map-merge(
-                    $site-colors,
-                    map-merge(
-                        $match-outcome-colors,
-                        (
-                         "orange": $orange-300,
-                        )
-                    )
-                )
-    ),
+  "colors": (
+    property: color,
+    class: text,
+    values: map-merge(
+      map-merge(
+        $site-colors,
+        $fixture-colors
+      ), 
+      $match-outcome-colors
+    )
+  ),
 );

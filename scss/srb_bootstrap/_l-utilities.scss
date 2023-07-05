@@ -1,0 +1,24 @@
+$utilities: (
+  "background-color": (
+    property: background-color,
+    class: bg,
+    values: map-merge(
+      $site-colors,
+      (
+        "alt-orange": $orange-300,
+        
+      )
+    )
+  ),
+  "colors": (
+    property: color,
+    class: text,
+    values:  map-merge(
+        $site-colors,
+        (
+          "alt-orange": $orange-300,
+          
+        )
+      )
+  ),
+);

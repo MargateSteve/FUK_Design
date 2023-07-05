@@ -1,17 +1,22 @@
-// scss-docs-start site-colors-map
 $site-colors: (
-  "fixture":    green,
-  "fulltime":  blue,
-  "postponed":  red,
-  "abandoned": yellow,
   "dark-nav": $gray-900,
+) !default;
+
+// scss-docs-start site-colors-map
+$fixture-colors: (
+  "fixture-status-fx": green,
+  "fixture-status-ft": blue,
+  "fixture-status-pp": red,
+  "fixture-status-ab": yellow,
+  "fixture-status-vd": rgb(83, 83, 81),
+
 ) !default;
 // scss-docs-end site-colors-map
 
 $match-outcome-colors: (
-  "win": blue,
-  "draw": green,
-  "defeat": red,
+  "match-outcome-win": blue,
+  "match-outcome-draw": green,
+  "match-outcome-loss": red,
 ) !default;
 
 
