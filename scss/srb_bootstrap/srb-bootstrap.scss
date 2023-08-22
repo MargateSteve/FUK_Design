@@ -32,3 +32,24 @@
   }
 } 
 
+.dropdown-menu {
+  &.dropdown-lg,  &.dropdown-xl{
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .dropdown-menu {
+    &.dropdown-lg {
+      min-width: 500px;
+    }
+  }
+
+  .dropdown-menu {
+    &.dropdown-xl {
+      min-width: 750px;
+    }
+  }
+}
+
+
