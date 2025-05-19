@@ -21,5 +21,6 @@
     <?php include 'inc/footer.php';?>
       
     <script src="../../vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

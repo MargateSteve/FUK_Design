@@ -2,7 +2,7 @@
         <nav id="sidebarMenuLeft" class="d-flex flex-column px-3 pb-3 bg-dark sidebar left-nav">
           <ul class="nav flex-column mb-auto">
             <li class="nav-item">
-              <a href="#" class="nav-link active">
+              <a href="index.php" class="nav-link active">
                 <i class="bi bi-bootstrap me-2"></i>
                 Home
               </a>
@@ -14,9 +14,9 @@
               </a>
             </li>
             <li>
-              <a href="#" class="nav-link">
+              <a href="widgets.php" class="nav-link">
                 <i class="bi bi-bootstrap me-2"></i>
-                Orders
+                Widgets
               </a>
             </li>
             <li>

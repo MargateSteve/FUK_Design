@@ -2,6 +2,7 @@
 <html lang="en">
   <?php include 'inc/head.php';?>
   <body>
+    <?php include '../../inc/functions/global.php';?>
     <?php include 'inc/header.php';?>
     <div class="container-fluid">
       <div class="row d-flex">

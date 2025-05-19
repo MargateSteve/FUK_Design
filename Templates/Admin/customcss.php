@@ -8,7 +8,7 @@
       <div class="row d-flex">
         <?php include 'inc/left.php'; ?>
 
-        <main class="">
+        <main class="flex-shrink-1">
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
             <h1 class="h1">Custom Css</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
@@ -65,11 +65,16 @@
                                     fuk_site_colours(), 
                                     fuk_fixture_status_colours(),
                                     fuk_match_outcome_colours());
+          echo '<p>';                          
           foreach ($allcolours as $key=>$value) {
             $class = 'bg-'.$key;
             $textcolour = ' text-'.$value;
             echo '<span class="'.$class.$textcolour.' p-1 mb-2">'.$class.'</span> ';
+            if(in_array($key, ['dark-nav', 'fixture-status-vd'])){
+              echo '</p><p>';
+            }
           }
+          echo '</p>'; 
           ?>
         </main>
 
